@@ -17,6 +17,8 @@ body, h1, h2, h3, p, ul, li {
 
 /* Estilo para o cabeçalho */
 .header {
+  height: 100px;
+  flex-shrink: 0;
   background-color: #0052a5;
   color: white;
   padding: 10px 0;
@@ -44,33 +46,23 @@ body, h1, h2, h3, p, ul, li {
 .search-bar {
   width: 600px;
   height: 50px;
-  flex-shrink: 0;
+  top: 25px;
+  left: 22px;
+  right: 818px;
   border-radius: 10px;
   background: #D9D9D9;
+  flex-shrink: 0;
 }
 
 .search-bar input[type="text"] {
-  width: 300px; /* Largura do campo de entrada */
-  padding: 10px;
+  width: 500px;
+  height: 40px;
+  top: 30px;
+  left: 886px;
   border: none;
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  font-size: 16px;
-  margin-right: 10px; /* Espaçamento à direita para separar da logo */
-}
-
-.search-bar button {
-  background-color: grey;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 15px;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
-}
-
-.search-bar button:hover {
-  background-color: #003b7a;
+  flex-shrink: 0;
+  -webkit-margin-top-collapse: separate;
+  background: #D9D9D9;
 }
 
 .card {
@@ -161,7 +153,7 @@ nav a {
 /* Container geral */
 .container {
   display: flex; /* Usa display flex para alinhar os itens horizontalmente */
-  max-width: 1200px; /* Largura máxima do container */
+  max-width: 1400px; /* Largura máxima do container */
   margin: 0 auto; /* Centraliza o container horizontalmente */
 }
 
