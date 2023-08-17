@@ -42,8 +42,11 @@ body, h1, h2, h3, p, ul, li {
 
 /* Estilo para a barra de pesquisa */
 .search-bar {
-  display: flex; /* Torna a barra de pesquisa um flex container */
-  align-items: center; /* Alinha os itens verticalmente no centro */
+  width: 600px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #D9D9D9;
 }
 
 .search-bar input[type="text"] {
