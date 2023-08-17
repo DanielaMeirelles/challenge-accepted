@@ -1,0 +1,254 @@
+/* Reseta as margens e preenchimentos padrão de elementos HTML */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos básicos */
+.body {
+  font-family: Arial, sans-serif; /* Fonte padrão */
+}
+/* Restante do seu código CSS */
+
+.card.expanded {
+  width: 600px; /* Largura maior para o card expandido */
+  height: auto; /* Altura ajustável para o card expandido */
+}
+
+/* Estilo para o cabeçalho */
+.header {
+  background-color: #0052a5;
+  color: white;
+  padding: 10px 0;
+  display: flex; /* Torna o cabeçalho um flex container */
+  align-items: center; /* Alinha os itens verticalmente no centro */
+  justify-content: space-between; /* Espaço entre a logo e a barra de pesquisa */
+
+}
+
+.logo img {
+  height: 40px; /* Altura da logo */
+  margin-right: 20px; /* Espaçamento à direita para separar da barra de pesquisa */
+}
+/* Estilo para o rodapé */
+.footer {
+  background-color: #b0acac; /* Cor de fundo do rodapé */
+  text-align: center; /* Centraliza o texto horizontalmente */
+  padding: 10px 5px; /* Espaçamento interno vertical e horizontal */
+  position: fixed; /* Fixa o rodapé no final da página */
+  width: 100%; /* Largura total */
+  bottom: 0; /* Alinha o rodapé no fundo */
+}
+
+
+/* 
+Estilo para o rodapé antigo 
+.footer {
+  background-color: #b0acac; 
+  text-align: center; 
+  padding: 10px 5px; 
+}
+
+ */
+
+/* Estilo para a barra de pesquisa */
+.search-bar {
+  display: flex; /* Torna a barra de pesquisa um flex container */
+  align-items: center; /* Alinha os itens verticalmente no centro */
+}
+
+.search-bar input[type="text"] {
+  width: 300px; /* Largura do campo de entrada */
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  margin-right: 10px; /* Espaçamento à direita para separar da logo */
+}
+
+.search-bar button {
+  background-color: grey;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.search-bar button:hover {
+  background-color: #003b7a;
+}
+
+/* .card {
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.card-content {
+  font-size: 1rem;
+  color: #666;
+}
+
+.WeatherCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+} */
+.card {
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  margin-bottom: 16px;
+  width: 400px; /* Defina a largura desejada para o card */
+}
+
+.card-title {
+  font-size: 1.8rem; /* Aumente o tamanho da fonte para o título */
+  margin-bottom: 10px;
+}
+
+.card-content {
+  font-size: 1.2rem; /* Aumente o tamanho da fonte para o conteúdo */
+  color: #666;
+}
+
+.WeatherCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+/* Estilos para a barra de navegação */
+nav ul {
+  list-style: none; /* Remove os marcadores da lista */
+  display: flex; /* Usa display flex para alinhar os itens horizontalmente */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+nav li {
+  margin: 0 15px; /* Espaçamento das margens dos itens da lista */
+}
+
+nav a {
+  text-decoration: none; /* Remove o sublinhado dos links */
+  color: white; /* Cor do texto dos links */
+}
+
+/* Estilo para o menu de navegação toggle */
+.menu-toggle {
+  display: none; /* Oculta o menu toggle em telas maiores */
+  flex-direction: column; /* Alinha os itens em coluna vertical */
+  cursor: pointer; /* Altera o cursor para indicar clique */
+  padding: 10px; /* Espaçamento interno */
+}
+
+/* Estilo para as barras do ícone de menu toggle */
+.bar {
+  width: 30px; /* Largura das barras */
+  height: 3px; /* Altura das barras */
+  background-color: #333; /* Cor das barras */
+  margin: 3px 0; /* Espaçamento entre as barras */
+}
+
+/* Estilo para o menu de navegação */
+.navbar {
+  background-color: #0052a5; /* Cor de fundo do menu de navegação */
+  color: white; /* Cor do texto */
+  width: 250px; /* Largura do menu de navegação */
+  height: 100vh; /* Altura do menu de navegação */
+  position: fixed; /* Fixa o menu à tela */
+  top: 0; /* Alinha o topo do menu à parte superior da tela */
+  left: -250px; /* Inicialmente oculto (fora da tela) */
+  transition: left 0.3s ease-in-out; /* Transição suave ao mostrar/ocultar */
+}
+
+.navbar ul {
+  list-style: none; /* Remove os marcadores da lista */
+  padding: 20px; /* Espaçamento interno */
+}
+
+.navbar li {
+  margin: 10px 0; /* Espaçamento das margens dos itens da lista */
+}
+
+/* Estilo para exibir o menu quando o toggle é clicado */
+.show-nav .navbar {
+  left: 0; /* Mostra o menu deslizando para a esquerda */
+}
+
+/* Container geral */
+.container {
+  display: flex; /* Usa display flex para alinhar os itens horizontalmente */
+  max-width: 1200px; /* Largura máxima do container */
+  margin: 0 auto; /* Centraliza o container horizontalmente */
+}
+
+/* Estilo para a seção principal dentro do container */
+.main-section {
+  flex: 2; /* Define a proporção de ocupação na flexbox */
+  padding: 20px; /* Espaçamento interno */
+}
+
+/* Estilo para a barra lateral dentro do container */
+.sidebar {
+  flex: 1; /* Define a proporção de ocupação na flexbox */
+  background-color: #f1f1f1; /* Cor de fundo da barra lateral */
+  padding: 20px; /* Espaçamento interno */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Sombra leve */
+}
+
+.sidebar h2 {
+  font-size: 20px; /* Tamanho da fonte */
+  margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+.sidebar ul {
+  list-style: none; /* Remove os marcadores da lista */
+  padding: 0; /* Remove o espaçamento interno */
+}
+
+.sidebar li {
+  margin: 5px 0; /* Espaçamento das margens dos itens da lista */
+}
+
+/* Estilos para o cabeçalho responsivo */
+@media (max-width: 768px) {
+  body {
+      font-size: 20px; /* Tamanho de fonte menor para telas menores */
+  }
+
+  header {
+      padding: 10px 0; /* Espaçamento interno vertical e horizontal */
+  }
+
+  nav ul {
+      flex-direction: column; /* Altera a direção da lista para uma coluna */
+      align-items: center; /* Centraliza os itens verticalmente */
+  }
+
+  nav li {
+      margin: 10px 0; /* Espaçamento das margens dos itens da lista */
+  }
+
+  .main-section {
+      padding: 30px; /* Espaçamento interno */
+  }
+
+  .weather-box {
+      padding: 15px; /* Espaçamento interno */
+  }
+}
