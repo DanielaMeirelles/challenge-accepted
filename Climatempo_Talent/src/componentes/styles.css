@@ -28,7 +28,7 @@ body, h1, h2, h3, p, ul, li {
 
 .logo img {
   height: 40px; /* Altura da logo */
-  margin-right: 20px; /* Espaçamento à direita para separar da barra de pesquisa */
+  margin-right: 50px; /* Espaçamento à direita para separar da barra de pesquisa */
 }
 /* Estilo para o rodapé */
 .footer {
@@ -39,17 +39,6 @@ body, h1, h2, h3, p, ul, li {
   width: 100%; /* Largura total */
   bottom: 0; /* Alinha o rodapé no fundo */
 }
-
-
-/* 
-Estilo para o rodapé antigo 
-.footer {
-  background-color: #b0acac; 
-  text-align: center; 
-  padding: 10px 5px; 
-}
-
- */
 
 /* Estilo para a barra de pesquisa */
 .search-bar {
@@ -81,30 +70,6 @@ Estilo para o rodapé antigo
   background-color: #003b7a;
 }
 
-/* .card {
-  border: 1px solid #ccc;
-  padding: 16px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  background-color: white;
-}
-
-.card-title {
-  font-size: 1.5rem;
-  margin-bottom: 8px;
-}
-
-.card-content {
-  font-size: 1rem;
-  color: #666;
-}
-
-.WeatherCard {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-} */
 .card {
   border: 1px solid #ccc;
   padding: 16px;
