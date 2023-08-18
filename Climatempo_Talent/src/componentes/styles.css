@@ -32,6 +32,13 @@ body, h1, h2, h3, p, ul, li {
   height: 40px; /* Altura da logo */
   margin-right: 50px; /* Espaçamento à direita para separar da barra de pesquisa */
 }
+
+.lupa {
+  width: 30.001px;
+  height: 29.997px;
+  flex-shrink: 0;
+  fill: #000;
+}
 /* Estilo para o rodapé */
 .footer {
   background-color: #b0acac; /* Cor de fundo do rodapé */
@@ -47,8 +54,8 @@ body, h1, h2, h3, p, ul, li {
   width: 600px;
   height: 50px;
   top: 25px;
-  left: 22px;
-  right: 818px;
+  left: 818px;
+  right: 22px;
   border-radius: 10px;
   background: #D9D9D9;
   flex-shrink: 0;
@@ -63,6 +70,12 @@ body, h1, h2, h3, p, ul, li {
   flex-shrink: 0;
   -webkit-margin-top-collapse: separate;
   background: #D9D9D9;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .card {
