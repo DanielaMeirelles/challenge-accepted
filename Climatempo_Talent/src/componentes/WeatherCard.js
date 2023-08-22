@@ -1,9 +1,23 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Card from './card';
 import './styles.css';
-import weatherData from './weather.json';
+import axios from 'axios';
 
-const WeatherCard = () => {
+function WeatherCard() {
+  const [weatherData, setWeatherData] = useState([]);
+
+  useEffect(() => {
+    async function fetchWeatherData() {
+      try {
+        const response = await axios.get('https://climatempo-talent.rj.r.appspot.com/weatherforecast?city_id=3735&unit_temperature=celsius&unit_precipitation=mm');
+        setWeatherData(response.data);
+      } catch (error) {
+        console.error('Error fetching weather data:', error);
+      }
+    }
+
+    fetchWeatherData();
+  }, []);
 
   return (
     <div className="WeatherCard">
@@ -11,10 +25,20 @@ const WeatherCard = () => {
         <Card
         key={day.period.begin}
         title={`Previsão do Tempo em ${day.locale.name}, ${day.locale.state}`}
-        content={`Mínima: ${day.weather[0].temperature.min}°C | Máxima: ${day.weather[0].temperature.max}°C | ${day.weather[0].text}`}
+        content={day.weather.map(day => (
+          <div key={day.date}>
+            <p>Data: {day.date}</p>
+            <p>Temperatura Máxima: {day.temperature.max}°C</p>
+            <p>Temperatura Mínima: {day.temperature.min}°C</p>
+            <p>Probabilidade de Chuva: {day.rain.probability}%</p>
+            <p>Quantidade de Chuva: {day.rain.precipitation}mm</p>
+            <p>Descrição: {day.text}</p>
+            <hr />
+            </div>
+        ))}
         />
       ))}
-    </div>
+      </div>
   );
 };
 

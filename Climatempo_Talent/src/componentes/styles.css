@@ -17,7 +17,7 @@ body, h1, h2, h3, p, ul, li {
 
 /* Estilo para o cabeçalho */
 .header {
-  height: 100px;
+  height: 70px;
   flex-shrink: 0;
   background-color: #0052a5;
   color: white;
@@ -28,9 +28,18 @@ body, h1, h2, h3, p, ul, li {
 
 }
 
+/* Estilo para o contêiner da logo */
+.logo {
+  display: flex;
+  align-items: center; /* Centraliza verticalmente */
+}
+
+/* Estilo para a própria imagem da logo */
 .logo img {
-  height: 40px; /* Altura da logo */
-  margin-right: 50px; /* Espaçamento à direita para separar da barra de pesquisa */
+  width: 200px; /* Largura da imagem */
+  height: auto; /* Altura ajustada automaticamente para manter a proporção */
+  margin-right: 10px; /* Espaçamento à direita para separar a logo de outros elementos */
+  margin-left: 20px;
 }
 
 .lupa {
@@ -38,6 +47,7 @@ body, h1, h2, h3, p, ul, li {
   height: 29.997px;
   flex-shrink: 0;
   fill: #000;
+  margin: 37px 37px 40px -55px;
 }
 /* Estilo para o rodapé */
 .footer {
@@ -53,9 +63,9 @@ body, h1, h2, h3, p, ul, li {
 .search-bar {
   width: 600px;
   height: 50px;
-  top: 25px;
-  left: 818px;
-  right: 22px;
+  margin-top: -2px;
+  margin-left: 590px;
+  margin-right: 4px;
   border-radius: 10px;
   background: #D9D9D9;
   flex-shrink: 0;
@@ -64,15 +74,14 @@ body, h1, h2, h3, p, ul, li {
 .search-bar input[type="text"] {
   width: 500px;
   height: 40px;
-  top: 30px;
-  left: 886px;
-  border: none;
+  margin-top: 4px;
+  margin-left: 10px;
+  border: 5px;
   flex-shrink: 0;
-  -webkit-margin-top-collapse: separate;
   background: #D9D9D9;
   color: #000;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 30px;
+  font-size: 25px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -98,13 +107,14 @@ body, h1, h2, h3, p, ul, li {
   color: #666;
 }
 
-.WeatherCard {
+/*.WeatherCard {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
-}
+}*/
+
 /* Estilos para a barra de navegação */
 nav ul {
   list-style: none; /* Remove os marcadores da lista */
